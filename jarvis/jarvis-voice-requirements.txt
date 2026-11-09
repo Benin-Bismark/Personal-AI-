@@ -1,0 +1,4 @@
+# JARVIS Voice Recognition Requirements
+SpeechRecognition==3.10.0
+PyAudioWPatch==0.2.12.7
+pyttsx3==2.98
