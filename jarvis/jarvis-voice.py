@@ -184,7 +184,9 @@ class JarvisVoice:
             env = os.environ.copy()
             env['CLAUDE_CONFIG_DIR'] = os.path.expanduser('~\\.claude-omniroute')
             env['ANTHROPIC_BASE_URL'] = 'http://localhost:20128'
-            env['ANTHROPIC_AUTH_TOKEN'] = 'sk-701e0a293aa77b9b-266020-bfa548f1'
+            # Use existing auth token from environment (set by startup script)
+            if 'ANTHROPIC_AUTH_TOKEN' not in env:
+                env['ANTHROPIC_AUTH_TOKEN'] = os.getenv('ANTHROPIC_AUTH_TOKEN', '')
             env['ANTHROPIC_API_KEY'] = ''
             env['ANTHROPIC_MODEL'] = 'omniroute-free'
 

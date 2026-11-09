@@ -22,7 +22,8 @@ Write-Host "[3/3] Starting Claude Code..." -ForegroundColor Yellow
 # Set environment variables
 $env:CLAUDE_CONFIG_DIR = "$HOME\.claude-omniroute"
 $env:ANTHROPIC_BASE_URL = "http://localhost:20128"
-$env:ANTHROPIC_AUTH_TOKEN = "sk-701e0a293aa77b9b-266020-bfa548f1"
+# TODO: Set your auth token here or in Windows environment variables
+# $env:ANTHROPIC_AUTH_TOKEN = "your-token-here"
 $env:ANTHROPIC_API_KEY = ""
 $env:ANTHROPIC_MODEL = "omniroute-free"
 

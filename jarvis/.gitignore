@@ -1,0 +1,5 @@
+# Keep your local config private
+jarvis/config.env
+config.env
+*.env
+!config.template.env
