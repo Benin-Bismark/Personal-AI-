@@ -1,0 +1,44 @@
+# Ignore these files/directories when Claude analyzes the project
+
+# Dependencies
+node_modules/
+bower_components/
+
+# Build outputs
+dist/
+build/
+out/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Electron build artifacts
+release/
+*.exe
+*.dmg
+*.AppImage
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# User data (conversations, settings)
+# We want to see structure but not user's personal data
+conversations/
+memory/
+
+# Package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
